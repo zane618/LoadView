@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.loadview.view.ProgressBarView
+        android:id="@+id/progress_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:padding="15dp"
+        app:progress_text_color="@color/colorAccent"
+        app:progress_unreach_color="@color/colorPrimary"
+        app:progress_reach_color="@android:color/white"/>
+
+    <com.example.loadview.ProgressBarView
+        android:id="@+id/progress_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:padding="15dp"
+        app:progress_text_color="@color/colorAccent"
+        app:progress_unreach_color="@color/colorPrimary"
+        app:progress_reach_color="@android:color/white"/>
+
+    <com.example.loadview.view.RoundProgressBar
+        android:id="@+id/round_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        app:progress_text_color="@color/colorPrimary"
+        app:progress_unreach_color="@color/colorAccent"
+        app:progress_reach_color="@android:color/white"
+        app:radius="40dp"
+        />
+
+    <com.example.loadview.RoundProgressBar
+        android:id="@+id/round_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        app:progress_text_color="@color/colorPrimary"
+        app:progress_unreach_color="@color/colorAccent"
+        app:progress_reach_color="@color/colorPrimary"
+        app:radius="60dp"
+        />
+
+</LinearLayout>
